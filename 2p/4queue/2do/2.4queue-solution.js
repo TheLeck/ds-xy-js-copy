@@ -6,7 +6,7 @@
 
 function Queue() {
     this.dataStore = []
-  this.top = 5
+    this.top = 5
 
     this.enqueue= function(element) {
       if (this.dataStore.length == this.top){
@@ -43,20 +43,20 @@ function Queue() {
 
     this.empty= function() {
 	if (this.dataStore.length == 0){
-	    console.log("velda")
+	    //console.log("velda")
     return true	
 	}else{ 
-      console.log("no velda")
+     // console.log("no velda")
 	    return false
 	}
     }
 
     this.full= function() {
       if (this.dataStore.length == this.top){
-        console.log("velda")
+       // console.log("velda")
         return true
       } else {
-        console.log("no velda")
+       // console.log("no velda")
         return false
       }
     }
@@ -70,8 +70,8 @@ q.enqueue("Jennifer")
 q.enqueue("Pepito")
 q.enqueue("Gloria")
 q.enqueue("Justin")
-q.empty()
-q.full()
+//q.empty()
+//q.full()
 console.log(q.toString())
 
 console.log("Front of queue: " + q.front())
