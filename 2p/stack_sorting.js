@@ -23,7 +23,7 @@ class Stack {
 let a = new Stack()
 let b = new Stack()
 // VARIABLE PARA CAMBIAR LA CANTIDAD DE NUMEROS ALEATORIOS!
-let can_aleatorios = 100
+let can_aleatorios = 10
 //ARRIBA! ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 let i= 0, num = 0, j = 0, cont = 0
 
