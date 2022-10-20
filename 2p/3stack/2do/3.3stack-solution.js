@@ -56,6 +56,7 @@ class Stack {
           console.log('No encontrado')
       }
     }
+  
     traverse(){}
 
     toString(){}

@@ -1,8 +1,7 @@
 //
 // imports ES5
 // linked5es2do
-//
-
+// 
 //first
 //let n1=new Node('a',new Node('f'))
 let n1=new Node('a')
