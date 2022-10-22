@@ -23,9 +23,12 @@ class Stack {
 let a = new Stack()
 let b = new Stack()
 // VARIABLE PARA CAMBIAR LA CANTIDAD DE NUMEROS ALEATORIOS!
-let can_aleatorios = 10
+let can_aleatorios = 1000
 //ARRIBA! ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 let i= 0, num = 0, j = 0, cont = 0
+
+//Tiempo
+var start = new Date().getTime()
 
 //creacion de numeros
 while(j< can_aleatorios){
@@ -56,4 +59,12 @@ while(j< can_aleatorios){
         }
     }
 }
+
+//tiempo
+var stop = new Date().getTime()
+var elapsed = stop - start
+
+//resultados
 console.log(a)
+console.log("Pasos: ", cont)
+console.log("Tiempo: ", elapsed)

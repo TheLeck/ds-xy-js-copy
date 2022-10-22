@@ -43,20 +43,16 @@ function Queue() {
 
     this.empty= function() {
 	if (this.dataStore.length == 0){
-	    //console.log("velda")
     return true	
 	}else{ 
-     // console.log("no velda")
 	    return false
 	}
     }
 
     this.full= function() {
       if (this.dataStore.length == this.top){
-       // console.log("velda")
         return true
       } else {
-       // console.log("no velda")
         return false
       }
     }
@@ -64,14 +60,22 @@ function Queue() {
 
 
 let q = new Queue()
+
+if(q.empty()){console.log("Vacia (Con empty)")}
+if(q.full()){console.log("Fila llena (Con full)")}
+
+console.log("\n Comienza llenado")
 q.enqueue("Meredith")
 q.enqueue("Cynthia")
 q.enqueue("Jennifer")
 q.enqueue("Pepito")
 q.enqueue("Gloria")
 q.enqueue("Justin")
-//q.empty()
-//q.full()
+console.log(" Termina llenado \n")
+
+if(q.empty()){console.log("Vacia (Con empty)")}
+if(q.full()){console.log("Fila llena (Con full)")}
+
 console.log(q.toString())
 
 console.log("Front of queue: " + q.front())
@@ -85,4 +89,4 @@ q.dequeue()
 q.dequeue()
 console.log(q.toString())
 
-console.log('done')
+console.log("done")

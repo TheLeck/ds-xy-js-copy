@@ -38,10 +38,10 @@ let n2=new Node('b')
 
 let l=new Linked(n1)
 l.traverse(l.getHead())
-
+console.log(l.getTail())
 l.prepend(n2)
 l.traverse(l.getHead())
-
+console.log(l.getTail())
 //
 l.append(new Node('c'))
 l.traverse(l.getHead())
@@ -49,3 +49,4 @@ l.traverse(l.getHead())
 if(l.contains('c')){
   console.log("encontrado")
 }
+console.log(l.getTail())

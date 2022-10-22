@@ -9,11 +9,14 @@ function Linked(n) {//node
     this.append = append
     this.traverse = traverse
     this.contains = contains
+    this.getTail = getTail
     this.insertAfter = insertAfter
     this.insertBefore = insertBefore
 }
 
 function getHead(){return this.head}
+
+function getTail(){return this.tail}
 
 function prepend(n){//new node
     n.next = this.head
