@@ -1,5 +1,5 @@
 import Node from '../../../../long/linked/node6es.js'
-import Linked from '../../5es/linked5es.js'
+import Linked from '../../../../long/linked/linked.js'
 
 //
 
