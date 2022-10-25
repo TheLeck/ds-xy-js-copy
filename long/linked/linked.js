@@ -74,13 +74,19 @@ function insertAfter(n,aft){
 
 function insertBefore(n,aft){
       let c=this.head
-    while(c){//exists
-	if(aft == c.next.data){
-    n.next = c.next
-    c.next = n
-    return true
-  }
-	c=c.next
-    }
-    console.log('\n')
+      if(aft == c.data){
+        n.next = this.head
+        this.head=n
+        return true
+      }else{
+        while(c){//exists
+          if(aft == c.next.data){
+            n.next = c.next
+            c.next = n
+            return true
+          }
+  	      c=c.next
+        }
+      }
+  return false
 }
