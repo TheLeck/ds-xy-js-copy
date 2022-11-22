@@ -3,7 +3,7 @@
 // imports
 // preorder
 //
-
+export default
 function Node(o){
     this.d=o//bject<->data
     this.l=null//eft

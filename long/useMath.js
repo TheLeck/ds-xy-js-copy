@@ -1,2 +1,2 @@
-import {mysum} from './math.js'
+ import {mysum} from './math.js'
 console.log(mysum)
