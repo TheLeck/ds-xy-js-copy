@@ -12,7 +12,7 @@ function fib (a){
     fib(a-1)
   }
 }
-
+console.log('Fibonacci = 10')
 fib(10)
 
 // 2. power
@@ -24,7 +24,7 @@ function power(b,p){
     return b*power(b,(p-1))
   }
 }
-
+console.log('\nPower = 5, 3')
 console.log(power(5,3))
 
 // 3. factorial
@@ -36,4 +36,5 @@ function factorial(n){
     return n* factorial(n-1)
   }
 }
+console.log('\nFactorial = 3')
 console.log(factorial(3))
